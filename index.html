@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Portafolio</title>
+</head>
+
+<body class="hidden">
+
+<!--preloader-->
+<div class="centrado" id="onload">
+    <div class="lds-heart"><div></div></div>
+
+</div>
+
+
+
+
+    <!--Seccion inicio-->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1></h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MÍ</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+
+                        </ul>
+                    </nav>
+                    <!--Iconos del menu responsive-->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+
+                    </div>
+
+                    <!--Iconos de las redes sociales-->
+                    <div class="redes">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+
+                    </div>
+                </div>
+            </header>
+
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Natasha Zárate</span></h2>
+                <p class="descripcion">
+                    Actualmente estoy participando del proyecto Oracle One en Alura Latam. Con la expectativa de
+                    aprender y formarme de la mejor manera posible
+                </p>
+                <a href="#portfolio">Ir al Portafolio</a>
+
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION SOBRE MI-->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/fotomia.jpg " alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola!! Soy <span>Natasha Zárate</span></h2>
+            <h3> tengo 23 años y nací en Mendoza,Argentina.</h3>
+
+            <p>Gracias al proyecto Oracle ONE en Alura Latam, he aprendido las bases para ser una buena
+                programadora.Actualmente estoy desarrollando mis Skills en el mundo de la
+                programación,estudiando,practicando, con la mente abierta y presto para mejorar mis habilidades.
+
+                Soy una programadora en constante actualización y busco sumar experiencia en el área de desarrollo.
+                Integrando equipos de trabajo cooperativos e impulsando los proyectos al máximo.</p>
+
+        </div>
+    </section>
+
+
+    <!--SECCION SERVICIOS-->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>HTML 5</h4><!--Diseño de sitios Web-->
+                <hr>
+                <ul class="servicios-tag">
+                    <li>MAQUETACIÓN HTML</li>
+                    
+                </ul>
+                <p></p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-html5"></i></span>
+                <h4>DISEÑO WEB</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>MAQUETACIÓN CSS</li>
+                    
+                </ul>
+                <p></p>
+            </div>
+
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-css3-alt"></i></span>
+                <h4>JAVASCRIPT</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>LENGUAJE JAVASCRIPT</li>
+                   
+                </ul>
+                <p></p>
+            </div>
+
+
+
+
+        </div>
+    </section>
+
+    <!--SECCION SKILLS-->
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES</h3>
+        <div class="skill">
+            <div class="info">
+                <p><span class="lista"></span>Html & Css</p>
+                <span class="porcentaje">90%</span>
+            </div>
+            <div class="barra">
+                <div id="html" class="barra-progreso1">
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="info">
+                    <p><span class="lista"></span>Javascript</p>
+                    <span class="porcentaje">80%</span>
+                </div>
+                <div class="barra">
+                    <div id="js" class="barra-progreso2">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--SECCION PORTAFOLIO-->
+
+    <section id="portafolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/ahorcado2.png" alt="">
+                
+                <div class="info">
+                    <h4>Juego Ahorcado</h4>
+                    <p>Creado con Html Css y Javascript</p>
+                    <a href ="https://natasha64.github.io/juego-ahorcado.github.io/">Ver demo</a>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/ECOMMERCE3.png" alt="">
+                <div class="info">
+                    <h4>Ecommerce</h4>
+                    <p>Creado con Html Css y Javascript</p>
+                </div>
+            </div>
+
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/encriptador3.png" alt="">
+                <div class="info">
+                    <h4>Encriptador</h4>
+                    <p>Creado con Html Css y Javascript</p>
+                    <a href="https://natasha64.github.io/encriptador-oracle.github.io/">Ver demo</a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/barberia.png">
+                <div class="info">
+                    <h4>Barberia-Alura</h4>
+                    <p>Creado con html & Css</p>
+                    <a href=" https://natasha64.github.io/Barberia-Alura/">Ver demo</a>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/MINIALURA.png">
+                <div class="info">
+                    <h4>Mini-Alura</h4>
+                    <p>Creado con html & Css</p>
+                    <a href="https://natasha64.github.io/Mini-Alura/">Ver Demo</a>
+                </div>
+            </div>
+
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/grid.png">
+                <div class="info">
+                    <h4>Alura-Store</h4>
+                    <p>Creado con html & Css</p>
+                    <a href="https://natasha64.github.io/alura-grid.github.io/">Ver Demo</a>
+                </div>
+            </div>
+
+        </div>
+
+
+        </div>
+    </section>
+
+
+    <!--SECCION CONTACTO-->
+<section id="contacto">
+    <h3 class="titulo-seccion">Contacto</h3>
+    <div class="contenedor-form">
+        <form action="" id ="formulario">
+            <div class="fila mitad">
+                <input type="text" id="nombre" placeholder="Nombre Completo" class="input-mitad">
+                <input type="text" id="email" placeholder="Direccion de Email" class="input-mitad">      
+            </div>
+            <div class="fila">
+                <input type="text" placeholder="Tema" class="input-full">
+            </div>
+
+            <div class="fila">
+               <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" class="input-full"></textarea>
+            </div>
+           
+      <input type="submit" id="btn-enviar" value="Enviar Mensaje" class="btn-enviar">
+      <p class="warnings" id="warnings"></p>
+        </form>
+    </div>
+
+</section>
+
+
+
+
+
+<!--SECCION FOOTER-->
+<footer>
+    
+    <ul class="social_icon">
+        <li><a href="https://www.instagram.com/?hl=es"><i class="fa-brands fa-instagram"></i></a></li>
+        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a></li>
+        <li><a href="https://github.com/Natasha64"><i class="fa-brands fa-github"></i></a></li>
+    </ul>
+ <ul class="menu1">
+    <li><a href="#">Team</a></li>
+    <li><a href="#">Contact</a></li>
+   
+
+ </ul>
+    
+        <p>©2022|All Rights Reserved|Natasha Zárate</p>
+
+
+</footer>
+
+ 
+
+
+
+
+
+<script src="js/Responsive-menu.js"></script>
+<script src="js/form.js"></script>
+<script src="js/pre-loader.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+
+</body>
+</html>
